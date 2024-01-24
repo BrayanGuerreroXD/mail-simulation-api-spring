@@ -32,13 +32,14 @@ The application will be available at `http://localhost:8080`.
 
 The API exposes a single endpoint to simulate sending mail:
 
-- **Endpoint**: `POST /send-email`.
+- **Endpoint**: `POST /mail/send`.
   
   JSON request example:
 
   ```json
   {
-    "to": "destinatario@example.com",
-    "subject": "Mail subject",
-    "body": "Mail body"
+    "email": "user@mail.com",
+    "plate": "Vehicle's plate",
+    "message": "Mail message",
+    "parkingName": "Parking's name"
   }
